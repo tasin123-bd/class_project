@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HTML Links and CSS Properties</title>
+
+    <style>
+        /* Common link style */
+        a {
+            color: blue;
+            text-decoration: none;
+            display: inline;
+        }
+
+        /* Link states */
+        a:link {
+            color: blue;
+        }
+
+        a:visited {
+            color: yellow;
+        }
+
+        a:hover {
+            color: red;
+            text-decoration: none;
+        }
+
+        a:active {
+            color: green;
+        }
+
+        /* Text decoration examples */
+        .underline {
+            text-decoration: underline;
+        }
+
+        .overline {
+            text-decoration: overline;
+        }
+
+        .line-through {
+            text-decoration: line-through;
+        }
+
+        .blink {
+            text-decoration: blink;
+        }
+
+        .none {
+            text-decoration: none;
+        }
+
+        /* Display examples */
+        .inline {
+            display: inline;
+        }
+
+        .block {
+            display: block;
+        }
+
+        .inline-block {
+            display: inline-block;
+            padding: 8px;
+            background-color: lightblue;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        /* Button-like links */
+        .button-link {
+            display: inline-block;
+            padding: 10px 15px;
+            background-color: green;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .button-link:hover {
+            background-color: darkgreen;
+            color: white;
+        }
+
+        section {
+            margin-bottom: 25px;
+            padding: 15px;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>HTML Links and CSS Properties</h1>
+
+    <section>
+        <h2>1. href Attribute</h2>
+
+        <p>
+            <a href="#">Link using href="#"</a>
+        </p>
+
+        <p>
+            <a href="mailto:example@gmail.com">
+                Send an Email
+            </a>
+        </p>
+
+        <p>
+            <a href="https://www.google.com" target="_blank">
+                Open Google in a New Tab
+            </a>
+        </p>
+    </section>
+
+    <section>
+        <h2>2. Target Attribute</h2>
+
+        <p>
+            <a href="anchor_css.html" target="_blank">
+                _blank: Open in a new tab or window
+            </a>
+        </p>
+
+        <p>
+            <a href="body1.html" target="_self">
+                _self: Open in the same tab
+            </a>
+        </p>
+
+        <p>
+            <a href="body2.html" target="_parent">
+                _parent: Open in the parent frame
+            </a>
+        </p>
+
+        <p>
+            <a href="body3.html" target="_top">
+                _top: Open in the full browser window
+            </a>
+        </p>
+    </section>
+
+    <section>
+        <h2>3. Text Decoration</h2>
+
+        <p>
+            <a href="#" class="underline">
+                This link's decoration is underlined.
+            </a>
+        </p>
+
+        <p>
+            <a href="#" class="overline">
+                This link's decoration is overline.
+            </a>
+        </p>
+
+        <p>
+            <a href="#" class="line-through">
+                This link's decoration is line through.
+            </a>
+        </p>
+
+        <p>
+            <a href="#" class="blink">
+                This link's decoration is blink.
+            </a>
+            Modern browsers do not support blinking.
+        </p>
+
+        <p>
+            <a href="#" style="text-decoration: none;">
+                This link's decoration is none.
+            </a>
+        </p>
+    </section>
+
+    <section>
+        <h2>4. Display Properties</h2>
+
+        <p>Inline display:</p>
+
+        <a href="#" class="inline none">Link1</a>
+        <a href="#" class="inline none">Link2</a>
+
+        <p>Block display:</p>
+        <a href="#" class="block none">Link1</a>
+        <a href="#" class="block none">Link2</a>
+
+        <p>Inline-block display:</p>
+
+        <a href="#" class="inline-block none">Link1</a>
+        <a href="#" class="inline-block none">Link2</a>
+
+        <p>Display none:</p>
+
+        <a href="#" class="hidden none">Hidden Link</a>
+
+        <span>
+            The previous text is hidden using display: none.
+        </span>
+    </section>
+
+    <section>
+        <h2>5. Link States</h2>
+
+        <p>
+            <a href="https://www.wikipedia.org">
+                Visit Wikipedia to test link states
+            </a>
+        </p>
+
+        <p>Try the following:</p>
+
+        <ul>
+            <li>Unvisited link: a:link</li>
+            <li>Visited link: a:visited</li>
+            <li>Mouse over link: a:hover</li>
+            <li>Click and hold a link: a:active</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>6. Link Styled as a Button</h2>
+
+        <a class="button-link" href="#" target="_blank">
+            Click Me
+        </a>
+    </section>
+
+    <section>
+        <h2>7. Link Styled as an Image</h2>
+
+        <a href="#" target="_blank">
+            <img src="New folder/babaygirl.jpeg"
+                 alt="Baby Girl"
+                 height="100"
+                 width="100">
+        </a>
+    </section>
+
+</body>
+</html>
